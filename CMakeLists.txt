@@ -5,7 +5,7 @@ project(http_server C)
 ## c standard and compiler flags 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
-# add_compile_options(-Wall -Wextra) # Enable warnings
+add_compile_options(-Wall -Wextra) # Enable warnings
 
 ## include directories for headers
 include_directories(${CMAKE_SOURCE_DIR}/include)
