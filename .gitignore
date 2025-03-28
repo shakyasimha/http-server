@@ -1,0 +1,26 @@
+# Build directory
+/build/
+
+# Binary directory 
+/bin/
+
+# cmake temporary files
+CMakeCache.txt
+CmakeFiles/
+cmake_install.cmake 
+Makefile
+
+#  vscode config
+.vscode/
+
+# object files and compiled binaries
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dil
+*.exe
+*.log
+*.swp
+*.bak
