@@ -7,12 +7,6 @@
 
 int main() {
   // Defining socket addresses here 
-  /*
-   *  Explaining what goes here 
-   *  sockaddr_in.sin_family = AF_INET => ipv4 
-   *  sockaddr_in.sin_addr.s_addr = INADDR_ANY => will listen to any address 
-   *  sockaddr_in.s_port = htons(PORT) => will define the server port at 8080 (as defined above)
-   * */
   struct sockaddr_in address; 
   address.sin_family = AF_INET; 
   address.sin_addr.s_addr = INADDR_ANY; 
@@ -38,6 +32,10 @@ int main() {
   // 3. Listening to the HTTP server 
   listen(socket_fd, backlog);
 
-  
+  // 4. while-loop for running the read-write cycle
+  while(1) {
+    
+  }
+
   return 0;
 }
